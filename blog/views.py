@@ -7,7 +7,10 @@ from rest_framework.response import Response
 from .serializers import PostSerializer
 
 
-# Create your views here.
+def login(request):
+    return render(request, "login.html")
+
+
 @api_view(["GET"])
 def home(request):
     # Lets pull some random blog posts from an API for viewing only
